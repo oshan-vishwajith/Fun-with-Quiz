@@ -129,28 +129,28 @@ int main() {
    }
 
    // Question 11
-printf("Q3. Which data type is used to store decimal numbers in C?\n");
-printf("A) int\nB) float\nC) char\nD) double\n");
-printf("Your answer: ");
-scanf(" %c", &answer);
-if (answer == 'B' || answer == 'b') {
-    printf("✅ Correct!\n\n");
-    score++;
-} else {
-    printf("❌ Wrong! Correct answer: B) float\n\n");
-}
+   printf("Q3. Which data type is used to store decimal numbers in C?\n");
+   printf("A) int\nB) float\nC) char\nD) double\n");
+   printf("Your answer: ");
+   scanf(" %c", &answer);
+   if (answer == 'B' || answer == 'b') {
+       printf("✅ Correct!\n\n");
+       score++;
+   } else {
+       printf("❌ Wrong! Correct answer: B) float\n\n");
+   }
 
    // Question 12
-printf("Q4. Which function is used to print output in C?\n");
-printf("A) print()\nB) echo()\nC) printf()\nD) cout\n");
-printf("Your answer: ");
-scanf(" %c", &answer);
-if (answer == 'C' || answer == 'c') {
-    printf("✅ Correct!\n\n");
-    score++;
-} else {
-    printf("❌ Wrong! Correct answer: C) printf()\n\n");
-}
+   printf("Q4. Which function is used to print output in C?\n");
+   printf("A) print()\nB) echo()\nC) printf()\nD) cout\n");
+   printf("Your answer: ");
+   scanf(" %c", &answer);
+   if (answer == 'C' || answer == 'c') {
+       printf("✅ Correct!\n\n");
+       score++;
+   } else {
+       printf("❌ Wrong! Correct answer: C) printf()\n\n");
+   }
 
 
    // Show final score
