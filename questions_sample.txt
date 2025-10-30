@@ -1,0 +1,20 @@
+# Sample Questions File
+# Format: Question|OptionA|OptionB|OptionC|OptionD|Answer|Category|Difficulty
+# Difficulty: 1=Easy, 2=Medium, 3=Hard
+# Answer: A, B, C, or D
+
+# Example questions (uncomment and modify to use)
+# C Programming Questions
+What is the size of int on most systems?|2 bytes|4 bytes|8 bytes|16 bytes|B|C Programming|1
+Which keyword is used to define a constant?|const|constant|define|static|A|C Programming|2
+What does NULL represent in C?|Zero|Empty|Null pointer|Undefined|C|C Programming|2
+
+# Data Structures Questions
+What is the time complexity of binary search?|O(n)|O(log n)|O(n^2)|O(1)|B|Data Structures|2
+Which data structure uses FIFO?|Stack|Queue|Tree|Graph|B|Data Structures|1
+
+# General Knowledge Questions
+What year did World War II end?|1943|1944|1945|1946|C|General Knowledge|2
+Who painted the Mona Lisa?|Van Gogh|Picasso|Da Vinci|Michelangelo|C|General Knowledge|1
+
+# Add your own questions below:
