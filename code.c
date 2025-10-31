@@ -176,6 +176,18 @@ int main() {
        printf("❌ Wrong! Correct answer: A) const\n\n");
    }
 
+   // ✅ New Question 15
+   printf("Q15. Which data type is used to store a single character in C?\n");
+printf("A) int\nB) char\nC) float\nD) double\n");
+printf("Your answer: ");
+scanf(" %c", &answer);
+if (answer == 'B' || answer == 'b') {
+    printf("✅ Correct!\n\n");
+    score++;
+} else {
+    printf("❌ Wrong! Correct answer: B) char\n\n");
+}
+
    // Show final score
    printf("=================================\n");
    printf("🎯 Your Final Score: %d / 13\n", score);
