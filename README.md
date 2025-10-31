@@ -1,4 +1,4 @@
-# 🎯 Fun with Quiz
+# 🎯 FUN WITH QUIZ
 
 A simple and fun **quiz game** built in **C language**!
 Create and answer multiple-choice questions to test your general knowledge!
