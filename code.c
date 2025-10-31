@@ -13,7 +13,7 @@ int main() {
    printf("A) echo\nB) print\nC) printf\nD) cout\n");
    printf("Your answer: ");
    scanf(" %c", &answer); // reads user's answer
-   if (answer == 'C' || answer == 'c') {
+   if (answer == 'C' || answer == 'c'){
        printf("✅ Correct!\n\n");
        score++; // increase score if correct
    } else {
