@@ -189,16 +189,27 @@ if (answer == 'A' || answer == 'a') {
 }
 
    // ✅ New Question 15
-   printf("Q15. Which data type is used to store a single character in C?\n");
-printf("A) int\nB) char\nC) float\nD) double\n");
-printf("Your answer: ");
-scanf(" %c", &answer);
-if (answer == 'B' || answer == 'b') {
-    printf("✅ Correct!\n\n");
-    score++;
-} else {
-    printf("❌ Wrong! Correct answer: B) char\n\n");
-}
+printf("Q15. Which header file is essential for using the printf() and scanf() functions?\n");
+    printf("A) <stdlib.h>\nB) <math.h>\nC) <string.h>\nD) <stdio.h>\n");
+    printf("Your answer: ");
+    scanf(" %c", &answer);
+    if (answer == 'D' || answer == 'd') {
+        printf("✅ Correct!\n\n");
+        score++;
+    } else {
+        printf("❌ Wrong! Correct answer: D) <stdio.h>\n\n");
+    }
+   // ✅ New Question 16
+printf("Q16. In C, what is the correct symbol used for the 'assignment' operator?\n");
+    printf("A) ==\nB) =\nC) :=\nD) !\n");
+    printf("Your answer: ");
+    scanf(" %c", &answer);
+    if (answer == 'B' || answer == 'b') {
+        printf("✅ Correct!\n\n");
+        score++;
+    } else {
+        printf("❌ Wrong! Correct answer: B) =\n\n");
+    }
 
    // Show final score
    printf("=================================\n");
