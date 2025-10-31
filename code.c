@@ -164,6 +164,19 @@ int main() {
        printf("❌ Wrong! Correct answer: A) int array[10];\n\n");
    }
 
+   // ✅ New Question 14
+   printf("Q13. Which header file is required for using the printf() function in C?\n");
+   printf("A) stdio.h\nB) conio.h\nC) iostream.h\nD) stdlib.h\n");
+   printf("Your answer: ");
+   scanf(" %c", &answer);
+   if (answer == 'A' || answer == 'a') {
+       printf("✅ Correct!\n\n");
+       score++;
+   } else {
+       printf("❌ Wrong! Correct answer: A) stdio.h\n\n");
+   }
+
+
    // Show final score
    printf("=================================\n");
    printf("🎯 Your Final Score: %d / 13\n", score);
