@@ -16,5 +16,6 @@ Which data structure uses FIFO?|Stack|Queue|Tree|Graph|B|Data Structures|1
 # General Knowledge Questions
 What year did World War II end?|1943|1944|1945|1946|C|General Knowledge|2
 Who painted the Mona Lisa?|Van Gogh|Picasso|Da Vinci|Michelangelo|C|General Knowledge|1
+Which planet is known as the Red Planet?|Earth|Mars|Jupiter|Venus|B|General Knowledge|1
 
 # Add your own questions below:
