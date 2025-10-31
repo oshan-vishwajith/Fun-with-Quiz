@@ -13,7 +13,7 @@
 
 ⚡ Instant Feedback – Receive immediate responses for every answer, reinforcing learning and keeping the experience dynamic and interactive.
 
-👶 Beginner-Friendly – Perfect mini-project for learning the basics of C programming.
+👶 Beginner-Friendly – A perfect mini-project to explore and master the fundamentals of C programming through hands-on practice!".
 
 ## 🚀 Getting Started
 
