@@ -12,10 +12,10 @@ int main() {
    printf("Q1. What is the keyword to print text in C?\n");
    printf("A) echo\nB) print\nC) printf\nD) cout\n");
    printf("Your answer: ");
-   scanf(" %c", &answer); // reads user's answer
+   scanf(" %c", &answer);
    if (answer == 'C' || answer == 'c'){
        printf("✅ Correct!\n\n");
-       score++; // increase score if correct
+       score++;
    } else {
        printf("❌ Wrong! Correct answer: C) printf\n\n");
    }
@@ -152,7 +152,7 @@ int main() {
        printf("❌ Wrong! Correct answer: C) printf()\n\n");
    }
 
-   // ✅ New Question 13
+   // Question 13
    printf("Q13. What is the correct way to declare an array of 10 integers in C?\n");
    printf("A) int array[10];\nB) int array(10);\nC) int array = {10};\nD) array int[10];\n");
    printf("Your answer: ");
@@ -164,7 +164,7 @@ int main() {
        printf("❌ Wrong! Correct answer: A) int array[10];\n\n");
    }
 
-   // ✅ New Question 14
+   // Question 14
    printf("Q14. Which keyword is used to create a constant value in C?\n");
    printf("A) const\nB) constant\nC) final\nD) static\n");
    printf("Your answer: ");
@@ -175,55 +175,56 @@ int main() {
    } else {
        printf("❌ Wrong! Correct answer: A) const\n\n");
    }
-   
-   // Question 15
-printf("Q15. Which keyword is used to create a constant variable in C?\n");
-printf("A) const\nB) final\nC) constant\nD) static\n");
-printf("Your answer: ");
-scanf(" %c", &answer);
-if (answer == 'A' || answer == 'a') {
-    printf("✅ Correct!\n\n");
-    score++;
-} else {
-    printf("❌ Wrong! Correct answer: A) const\n\n");
-}
 
-   // ✅ New Question 15
-printf("Q15. Which header file is essential for using the printf() and scanf() functions?\n");
-    printf("A) <stdlib.h>\nB) <math.h>\nC) <string.h>\nD) <stdio.h>\n");
-    printf("Your answer: ");
-    scanf(" %c", &answer);
-    if (answer == 'D' || answer == 'd') {
-        printf("✅ Correct!\n\n");
-        score++;
-    } else {
-        printf("❌ Wrong! Correct answer: D) <stdio.h>\n\n");
-    }
-   // ✅ New Question 16
-printf("Q16. In C, what is the correct symbol used for the 'assignment' operator?\n");
-    printf("A) ==\nB) =\nC) :=\nD) !\n");
-    printf("Your answer: ");
-    scanf(" %c", &answer);
-    if (answer == 'B' || answer == 'b') {
-        printf("✅ Correct!\n\n");
-        score++;
-    } else {
-        printf("❌ Wrong! Correct answer: B) =\n\n");
-    }
+   // Question 15
+   printf("Q15. Which header file is essential for using the printf() and scanf() functions?\n");
+   printf("A) <stdlib.h>\nB) <math.h>\nC) <string.h>\nD) <stdio.h>\n");
+   printf("Your answer: ");
+   scanf(" %c", &answer);
+   if (answer == 'D' || answer == 'd') {
+       printf("✅ Correct!\n\n");
+       score++;
+   } else {
+       printf("❌ Wrong! Correct answer: D) <stdio.h>\n\n");
+   }
+
+   // Question 16
+   printf("Q16. In C, what is the correct symbol used for the 'assignment' operator?\n");
+   printf("A) ==\nB) =\nC) :=\nD) !\n");
+   printf("Your answer: ");
+   scanf(" %c", &answer);
+   if (answer == 'B' || answer == 'b') {
+       printf("✅ Correct!\n\n");
+       score++;
+   } else {
+       printf("❌ Wrong! Correct answer: B) =\n\n");
+   }
+
+   // Question 17
+   printf("Q17. Which keyword is used to terminate a loop or switch statement in C?\n");
+   printf("A) stop\nB) break\nC) end\nD) exit\n");
+   printf("Your answer: ");
+   scanf(" %c", &answer);
+   if (answer == 'B' || answer == 'b') {
+       printf("✅ Correct!\n\n");
+       score++;
+   } else {
+       printf("❌ Wrong! Correct answer: B) break\n\n");
+   }
 
    // Show final score
    printf("=================================\n");
-   printf("🎯 Your Final Score: %d / 13\n", score);
+   printf("🎯 Your Final Score: %d / 17\n", score);
 
    // Final message based on performance
-   if (score == 13)
+   if (score == 17)
        printf("🏆 Excellent! You are a C master!\n");
-   else if (score >= 9)
+   else if (score >= 13)
        printf("👏 Great job! You know your basics.\n");
-   else if (score >= 5)
+   else if (score >= 8)
        printf("🙂 Not bad, keep practicing.\n");
    else
        printf("💪 Don’t give up! Study and try again.\n");
 
-   return 0; // end of program
+   return 0;
 }
