@@ -13,7 +13,7 @@ int main() {
    printf("A) echo\nB) print\nC) printf\nD) cout\n");
    printf("Your answer: ");
    scanf(" %c", &answer); // reads user's answer
-   if (answer == 'C' || answer == 'c') {
+   if (answer == 'C' || answer == 'c'){
        printf("✅ Correct!\n\n");
        score++; // increase score if correct
    } else {
@@ -163,17 +163,18 @@ int main() {
    } else {
        printf("❌ Wrong! Correct answer: A) int array[10];\n\n");
    }
-// ✅ New Question 14
-printf("Q14. Which keyword is used to create a constant value in C?\n");
-printf("A) var\nB) const\nC) static\nD) define\n");
-printf("Your answer: ");
-scanf(" %c", &answer);
-if (answer == 'B' || answer == 'b') {
-    printf("✅ Correct!\n\n");
-    score++;
-} else {
-    printf("❌ Wrong! Correct answer: B) const\n\n");
-}
+
+   // ✅ New Question 14
+   printf("Q14. Which keyword is used to create a constant value in C?\n");
+   printf("A) const\nB) constant\nC) final\nD) static\n");
+   printf("Your answer: ");
+   scanf(" %c", &answer);
+   if (answer == 'A' || answer == 'a') {
+       printf("✅ Correct!\n\n");
+       score++;
+   } else {
+       printf("❌ Wrong! Correct answer: A) const\n\n");
+   }
 
    // Show final score
    printf("=================================\n");
