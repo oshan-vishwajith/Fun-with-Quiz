@@ -1,182 +1,67 @@
 #include <stdio.h>
 
-// Main function - program execution starts here
+// Structure to hold a quiz question
+typedef struct {
+    char *question;
+    char *options[4];
+    char correctAnswer;
+} QuizQuestion;
+
 int main() {
-   char answer;           // stores user input for each question
-   int score = 0;         // keeps track of correct answers
+    char answer;          
+    int score = 0;        
 
-   printf("🧠 Welcome to the C Language Quiz!\n");
-   printf("=================================\n\n");
+    // Quiz questions
+    QuizQuestion questions[] = {
+        {"Q1. What is the keyword to print text in C?", {"echo", "print", "printf", "cout"}, 'C'},
+        {"Q2. Which symbol is used to end a statement in C?", {".", ";", ",", ":"}, 'B'},
+        {"Q3. Which header file is needed for printf()?", {"stdlib.h", "string.h", "stdio.h", "conio.h"}, 'C'},
+        {"Q4. What data type is used to store a single character?", {"char", "int", "float", "string"}, 'A'},
+        {"Q5. Which function is used to take input from the user?", {"scanf", "input", "get", "cin"}, 'A'},
+        {"Q6. Which of the following is a looping statement?", {"if", "switch", "for", "goto"}, 'C'},
+        {"Q7. Which operator is used for comparison in C?", {"=", "==", "!=", "<>"}, 'B'},
+        {"Q8. What is the size of int in most 32-bit systems?", {"2 bytes", "4 bytes", "6 bytes", "8 bytes"}, 'B'},
+        {"Q9. Which function clears the output screen in C (Turbo C)?", {"clrscr()", "clear()", "clean()", "cls()"}, 'A'},
+        {"Q10. Which loop always executes at least once?", {"for loop", "while loop", "do-while loop", "none"}, 'C'},
+        {"Q11. Which data type is used to store decimal numbers in C?", {"int", "float", "char", "double"}, 'B'},
+        {"Q12. Which function is used to print output in C?", {"print()", "echo()", "printf()", "cout"}, 'C'},
+        {"Q13. What is the correct way to declare an array of 10 integers in C?", {"int array[10];", "int array(10);", "int array = {10};", "array int[10];"}, 'A'}
+    };
 
-   // Question 1
-   printf("Q1. What is the keyword to print text in C?\n");
-   printf("A) echo\nB) print\nC) printf\nD) cout\n");
-   printf("Your answer: ");
-   scanf(" %c", &answer); // reads user's answer
-   if (answer == 'C' || answer == 'c') {
-       printf("✅ Correct!\n\n");
-       score++; // increase score if correct
-   } else {
-       printf("❌ Wrong! Correct answer: C) printf\n\n");
-   }
+    int totalQuestions = sizeof(questions) / sizeof(questions[0]);
 
-   // Question 2
-   printf("Q2. Which symbol is used to end a statement in C?\n");
-   printf("A) .\nB) ;\nC) ,\nD) :\n");
-   printf("Your answer: ");
-   scanf(" %c", &answer);
-   if (answer == 'B' || answer == 'b') {
-       printf("✅ Correct!\n\n");
-       score++;
-   } else {
-       printf("❌ Wrong! Correct answer: B) ;\n\n");
-   }
+    printf("🧠 Welcome to the C Language Quiz!\n");
+    printf("=================================\n\n");
 
-   // Question 3
-   printf("Q3. Which header file is needed for printf()?\n");
-   printf("A) stdlib.h\nB) string.h\nC) stdio.h\nD) conio.h\n");
-   printf("Your answer: ");
-   scanf(" %c", &answer);
-   if (answer == 'C' || answer == 'c') {
-       printf("✅ Correct!\n\n");
-       score++;
-   } else {
-       printf("❌ Wrong! Correct answer: C) stdio.h\n\n");
-   }
+    for(int i = 0; i < totalQuestions; i++) {
+        printf("%s\n", questions[i].question);
+        printf("A) %s\nB) %s\nC) %s\nD) %s\n", 
+               questions[i].options[0], questions[i].options[1], 
+               questions[i].options[2], questions[i].options[3]);
+        printf("Your answer: ");
+        scanf(" %c", &answer);
 
-   // Question 4
-   printf("Q4. What data type is used to store a single character?\n");
-   printf("A) char\nB) int\nC) float\nD) string\n");
-   printf("Your answer: ");
-   scanf(" %c", &answer);
-   if (answer == 'A' || answer == 'a') {
-       printf("✅ Correct!\n\n");
-       score++;
-   } else {
-       printf("❌ Wrong! Correct answer: A) char\n\n");
-   }
+        if(answer == questions[i].correctAnswer || answer == questions[i].correctAnswer + 32) { // handle lowercase
+            printf("✅ Correct!\n\n");
+            score++;
+        } else {
+            printf("❌ Wrong! Correct answer: %c) %s\n\n", 
+                   questions[i].correctAnswer, 
+                   questions[i].options[questions[i].correctAnswer - 'A']);
+        }
+    }
 
-   // Question 5
-   printf("Q5. Which function is used to take input from the user?\n");
-   printf("A) scanf\nB) input\nC) get\nD) cin\n");
-   printf("Your answer: ");
-   scanf(" %c", &answer);
-   if (answer == 'A' || answer == 'a') {
-       printf("✅ Correct!\n\n");
-       score++;
-   } else {
-       printf("❌ Wrong! Correct answer: A) scanf\n\n");
-   }
+    printf("=================================\n");
+    printf("🎯 Your Final Score: %d / %d\n", score, totalQuestions);
 
-   // Question 6
-   printf("Q6. Which of the following is a looping statement?\n");
-   printf("A) if\nB) switch\nC) for\nD) goto\n");
-   printf("Your answer: ");
-   scanf(" %c", &answer);
-   if (answer == 'C' || answer == 'c') {
-       printf("✅ Correct!\n\n");
-       score++;
-   } else {
-       printf("❌ Wrong! Correct answer: C) for\n\n");
-   }
+    if(score == totalQuestions)
+        printf("🏆 Excellent! You are a C master!\n");
+    else if(score >= 9)
+        printf("👏 Great job! You know your basics.\n");
+    else if(score >= 5)
+        printf("🙂 Not bad, keep practicing.\n");
+    else
+        printf("💪 Don’t give up! Study and try again.\n");
 
-   // Question 7
-   printf("Q7. Which operator is used for comparison in C?\n");
-   printf("A) =\nB) ==\nC) !=\nD) <>\n");
-   printf("Your answer: ");
-   scanf(" %c", &answer);
-   if (answer == 'B' || answer == 'b') {
-       printf("✅ Correct!\n\n");
-       score++;
-   } else {
-       printf("❌ Wrong! Correct answer: B) ==\n\n");
-   }
-
-   // Question 8
-   printf("Q8. What is the size of int in most 32-bit systems?\n");
-   printf("A) 2 bytes\nB) 4 bytes\nC) 6 bytes\nD) 8 bytes\n");
-   printf("Your answer: ");
-   scanf(" %c", &answer);
-   if (answer == 'B' || answer == 'b') {
-       printf("✅ Correct!\n\n");
-       score++;
-   } else {
-       printf("❌ Wrong! Correct answer: B) 4 bytes\n\n");
-   }
-
-   // Question 9
-   printf("Q9. Which function clears the output screen in C (Turbo C)?\n");
-   printf("A) clrscr()\nB) clear()\nC) clean()\nD) cls()\n");
-   printf("Your answer: ");
-   scanf(" %c", &answer);
-   if (answer == 'A' || answer == 'a') {
-       printf("✅ Correct!\n\n");
-       score++;
-   } else {
-       printf("❌ Wrong! Correct answer: A) clrscr()\n\n");
-   }
-
-   // Question 10
-   printf("Q10. Which loop always executes at least once?\n");
-   printf("A) for loop\nB) while loop\nC) do-while loop\nD) none\n");
-   printf("Your answer: ");
-   scanf(" %c", &answer);
-   if (answer == 'C' || answer == 'c') {
-       printf("✅ Correct!\n\n");
-       score++;
-   } else {
-       printf("❌ Wrong! Correct answer: C) do-while loop\n\n");
-   }
-
-   // Question 11
-   printf("Q11. Which data type is used to store decimal numbers in C?\n");
-   printf("A) int\nB) float\nC) char\nD) double\n");
-   printf("Your answer: ");
-   scanf(" %c", &answer);
-   if (answer == 'B' || answer == 'b') {
-       printf("✅ Correct!\n\n");
-       score++;
-   } else {
-       printf("❌ Wrong! Correct answer: B) float\n\n");
-   }
-
-   // Question 12
-   printf("Q12. Which function is used to print output in C?\n");
-   printf("A) print()\nB) echo()\nC) printf()\nD) cout\n");
-   printf("Your answer: ");
-   scanf(" %c", &answer);
-   if (answer == 'C' || answer == 'c') {
-       printf("✅ Correct!\n\n");
-       score++;
-   } else {
-       printf("❌ Wrong! Correct answer: C) printf()\n\n");
-   }
-
-   // ✅ New Question 13
-   printf("Q13. What is the correct way to declare an array of 10 integers in C?\n");
-   printf("A) int array[10];\nB) int array(10);\nC) int array = {10};\nD) array int[10];\n");
-   printf("Your answer: ");
-   scanf(" %c", &answer);
-   if (answer == 'A' || answer == 'a') {
-       printf("✅ Correct!\n\n");
-       score++;
-   } else {
-       printf("❌ Wrong! Correct answer: A) int array[10];\n\n");
-   }
-
-   // Show final score
-   printf("=================================\n");
-   printf("🎯 Your Final Score: %d / 13\n", score);
-
-   // Final message based on performance
-   if (score == 13)
-       printf("🏆 Excellent! You are a C master!\n");
-   else if (score >= 9)
-       printf("👏 Great job! You know your basics.\n");
-   else if (score >= 5)
-       printf("🙂 Not bad, keep practicing.\n");
-   else
-       printf("💪 Don’t give up! Study and try again.\n");
-
-   return 0; // end of program
+    return 0;
 }
