@@ -129,7 +129,7 @@ int main() {
    }
 
    // Question 11
-   printf("Q3. Which data type is used to store decimal numbers in C?\n");
+   printf("Q11. Which data type is used to store decimal numbers in C?\n");
    printf("A) int\nB) float\nC) char\nD) double\n");
    printf("Your answer: ");
    scanf(" %c", &answer);
@@ -141,7 +141,7 @@ int main() {
    }
 
    // Question 12
-   printf("Q4. Which function is used to print output in C?\n");
+   printf("Q12. Which function is used to print output in C?\n");
    printf("A) print()\nB) echo()\nC) printf()\nD) cout\n");
    printf("Your answer: ");
    scanf(" %c", &answer);
@@ -152,17 +152,28 @@ int main() {
        printf("❌ Wrong! Correct answer: C) printf()\n\n");
    }
 
+   // ✅ New Question 13
+   printf("Q13. What is the correct way to declare an array of 10 integers in C?\n");
+   printf("A) int array[10];\nB) int array(10);\nC) int array = {10};\nD) array int[10];\n");
+   printf("Your answer: ");
+   scanf(" %c", &answer);
+   if (answer == 'A' || answer == 'a') {
+       printf("✅ Correct!\n\n");
+       score++;
+   } else {
+       printf("❌ Wrong! Correct answer: A) int array[10];\n\n");
+   }
 
    // Show final score
    printf("=================================\n");
-   printf("🎯 Your Final Score: %d / 10\n", score);
+   printf("🎯 Your Final Score: %d / 13\n", score);
 
    // Final message based on performance
-   if (score == 10)
+   if (score == 13)
        printf("🏆 Excellent! You are a C master!\n");
-   else if (score >= 7)
+   else if (score >= 9)
        printf("👏 Great job! You know your basics.\n");
-   else if (score >= 4)
+   else if (score >= 5)
        printf("🙂 Not bad, keep practicing.\n");
    else
        printf("💪 Don’t give up! Study and try again.\n");
