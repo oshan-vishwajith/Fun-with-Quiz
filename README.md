@@ -5,15 +5,17 @@ Test your general knowledge with multiple-choice questions and see how many you 
 
 ---
 
-## 🧠 FEATURES
+🧠 Features
 
-* Interactive console-based quiz
-* Multiple-choice questions
-* Score tracking
-* Instant feedback after each question
-* Beginner-friendly C project
+🎮 Interactive Console Quiz – Engaging question-and-answer experience directly in the terminal.
 
----
+📝 Multiple-Choice Questions – Select the correct option (A, B, C, or D).
+
+📊 Score Tracking – Automatically keeps track of your correct answers.
+
+⚡ Instant Feedback – Get immediate responses after each question.
+
+👶 Beginner-Friendly – Perfect mini-project for learning the basics of C programming.
 
 ## 🚀 Getting Started
 
@@ -84,7 +86,7 @@ Fun-with-Quiz/
 * Add more questions from different categories
 * Randomize question order
 * Add difficulty levels
-* Save high scores
+* Save high score
 
 ---
 
