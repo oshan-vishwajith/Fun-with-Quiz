@@ -46,7 +46,7 @@ gcc quiz.c -o quiz
 ## 🧩 Example Gameplay
 
 ```
-Welcome to Fun with Quiz!
+Welcome to Fun with Quiz!!
 
 Question 1: What is the capital of France?
 A) Berlin
