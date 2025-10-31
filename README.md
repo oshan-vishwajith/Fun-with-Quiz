@@ -5,7 +5,7 @@ Test your general knowledge with multiple-choice questions and see how many you 
 
 ---
 
-## 🧠 Features
+## 🧠 FEATURES
 
 * Interactive console-based quiz
 * Multiple-choice questions
