@@ -1,9 +1,9 @@
 # 🎯 Fun with Quiz
-"Design a fun, simple general knowledge test using the C programming language, structured with multiple-choice questions and answers."
+"Create an engaging and simple general-knowledge quiz program in C, featuring multiple-choice questions with answers."
 
 ---
 
-🧠 What You’ll Get
+🧠 Features
 
 🎮 Interactive Console Quiz –Enjoy an engaging, real-time question-and-answer experience directly through the terminal interface.
 
@@ -46,7 +46,7 @@ gcc quiz.c -o quiz
 ## 🧩 Example Gameplay
 
 ```
-Welcome to Fun with Quiz!!
+Welcome to Fun with Quiz!
 
 Question 1: What is the capital of France?
 A) Berlin
