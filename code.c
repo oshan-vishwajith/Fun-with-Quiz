@@ -175,6 +175,18 @@ int main() {
    } else {
        printf("❌ Wrong! Correct answer: A) const\n\n");
    }
+   
+   // Question 15
+printf("Q15. Which keyword is used to create a constant variable in C?\n");
+printf("A) const\nB) final\nC) constant\nD) static\n");
+printf("Your answer: ");
+scanf(" %c", &answer);
+if (answer == 'A' || answer == 'a') {
+    printf("✅ Correct!\n\n");
+    score++;
+} else {
+    printf("❌ Wrong! Correct answer: A) const\n\n");
+}
 
    // Show final score
    printf("=================================\n");
