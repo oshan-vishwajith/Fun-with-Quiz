@@ -3,7 +3,7 @@
 
 ---
 
-🧠 Features
+🧠 What You’ll Get
 
 🎮 Interactive Console Quiz –Enjoy an engaging, real-time question-and-answer experience directly through the terminal interface.
 
