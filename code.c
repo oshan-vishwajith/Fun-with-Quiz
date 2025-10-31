@@ -176,23 +176,6 @@ int main() {
        printf("❌ Wrong! Correct answer: A) const\n\n");
    }
 
-   // Show final score
-   printf("=================================\n");
-   printf("🎯 Your Final Score: %d / 13\n", score);
-
-   // Final message based on performance
-   if (score == 13)
-       printf("🏆 Excellent! You are a C master!\n");
-   else if (score >= 9)
-       printf("👏 Great job! You know your basics.\n");
-   else if (score >= 5)
-       printf("🙂 Not bad, keep practicing.\n");
-   else
-       printf("💪 Don’t give up! Study and try again.\n");
-
-   return 0; // end of program
-}
-
    // ✅ New Question 15
 printf("Q15. Which header file is essential for using the printf() and scanf() functions?\n");
     printf("A) <stdlib.h>\nB) <math.h>\nC) <string.h>\nD) <stdio.h>\n");
@@ -215,3 +198,20 @@ printf("Q16. In C, what is the correct symbol used for the 'assignment' operator
     } else {
         printf("❌ Wrong! Correct answer: B) =\n\n");
     }
+
+   // Show final score
+   printf("=================================\n");
+   printf("🎯 Your Final Score: %d / 13\n", score);
+
+   // Final message based on performance
+   if (score == 13)
+       printf("🏆 Excellent! You are a C master!\n");
+   else if (score >= 9)
+       printf("👏 Great job! You know your basics.\n");
+   else if (score >= 5)
+       printf("🙂 Not bad, keep practicing.\n");
+   else
+       printf("💪 Don’t give up! Study and try again.\n");
+
+   return 0; // end of program
+}
