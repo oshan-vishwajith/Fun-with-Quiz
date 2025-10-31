@@ -164,6 +164,20 @@ int main() {
        printf("❌ Wrong! Correct answer: A) int array[10];\n\n");
    }
 
+   
+// Question 14
+printf("Q13. Which operator is used to get the address of a variable in C?\n");
+printf("A) &\nB) *\nC) %\nD) #\n");
+printf("Your answer: ");
+scanf(" %c", &answer);
+if (answer == 'A' || answer == 'a') {
+    printf("✅ Correct!\n\n");
+    score++;
+} else {
+    printf("❌ Wrong! Correct answer: A) &\n\n");
+}
+   
+
    // Show final score
    printf("=================================\n");
    printf("🎯 Your Final Score: %d / 13\n", score);
