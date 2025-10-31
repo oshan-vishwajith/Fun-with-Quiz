@@ -1,4 +1,4 @@
-# 🎯 FUN WITH QUIZ
+# 🎯 Fun with Quiz
 
 A simple and fun **quiz game** built in **C language**!
 Create and answer multiple-choice questions to test your general knowledge!
@@ -7,15 +7,15 @@ Create and answer multiple-choice questions to test your general knowledge!
 
 🧠 Features
 
-🎮 Interactive Console Quiz – Engaging question-and-answer experience directly in the terminal.
+🎮 Interactive Console Quiz –Enjoy an engaging, real-time question-and-answer experience directly through the terminal interface.
 
 📝 Multiple-Choice Questions – Select the correct option (A, B, C, or D).
 
 📊 Score Tracking – Automatically keeps track of your correct answers.
 
-⚡ Instant Feedback – Get immediate responses after each question.
+⚡ Instant Feedback – Receive immediate responses for every answer, reinforcing learning and keeping the experience dynamic and interactive.
 
-👶 Beginner Friendly – Perfect mini-project for learning the basics of C programming.
+👶 Beginner-Friendly – Perfect mini-project for learning the basics of C programming.
 
 ## 🚀 Getting Started
 
