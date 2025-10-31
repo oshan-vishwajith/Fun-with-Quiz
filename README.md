@@ -84,7 +84,7 @@ Fun-with-Quiz/
 * Add more questions from different categories
 * Randomize question order
 * Add difficulty levels
-* Save high scores
+* Save high score
 
 ---
 
