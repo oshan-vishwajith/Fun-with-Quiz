@@ -105,7 +105,7 @@ int main() {
    }
 
    // Question 9
-   printf("Q9. Which function clears the output screen in C (Turbo C)?\n");
+   printf("Q9. Which function clears the output screen in old Turbo C compilers?\n");
    printf("A) clrscr()\nB) clear()\nC) clean()\nD) cls()\n");
    printf("Your answer: ");
    scanf(" %c", &answer);
@@ -213,7 +213,7 @@ int main() {
    }
 
    // Show final score
-   printf("=================================\n");
+   printf("=================================\n\n");
    printf("🎯 Your Final Score: %d / 17\n", score);
 
    // Final message based on performance
